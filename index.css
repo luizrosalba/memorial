@@ -5,13 +5,12 @@ html {
     font-size: 10px;
   }
 
-  header{
-      position: fixed;
-      
+  head{
       background:rgb(255, 255, 255);
       width: 100vw;
       left:0;
       top:0;
+      height: 10vh;
     /*border: 5px solid black;*/
     }
     
@@ -22,57 +21,104 @@ html {
     margin-top: 8px;
   }
 
-  .ball {
-    width: 15px;
-    height: 15px;
-    margin-top: 3px ;
-    position: fixed;
-    background: black;
-    border-radius: 50%;
+  #title {
+    display: inline;
+    margin-block-start: 0.0em;
+    margin-block-end: 0.67em;
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Sansita Swashed', cursive;
   }
-  #b1 {
-    left: 5%;
-  }
-  
-  
-  #b2 {
-    left: 10%;
-  }
-  #b3 {
-    left: 15%;
-  }
-  #b4 {
-    left: 20%;
-  }
-  #b5 {
-    left: 25%;
-  }
-  #b6 {
-    left: 30%;
-  }
-  #b7 {
-    left: 35%;
-  }
-  #b8 {
-    left: 40%;
-  }
-  #b9 {
-    left: 45%;
-  }
-  #b10 {
-    left: 50%;
-  }
-  #b11 {
-    left: 55%;
-  }
-
   .saved {
+    display: inline;
     font-family: 'Great Vibes', cursive;
-    font-size: 36px;       
-    margin-top:100px;
+    font-size: 3.5rem;       
     }
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+ 
+  #headline {
+    text-align: center;
+    max-width: 100%;
+    font-size: 3rem;
+    font-family: 'Sansita Swashed', cursive;
+  }
+  
+  ul {
+    text-align: left;
+    line-height: 1.6;
+    max-width: 100%;
+    padding-right: 30px;
+    font-size: 2.5rem;
 
+  }
+  
+  li {
+    text-align: justify;
+    max-width: 100%;
+    font-size: 2.0rem;
+  }
 
+  blockquote {
+    padding-left: 25px;
+    font-style: italic;
+    max-width: 90vw;
+    margin: 0 auto 0px auto;
+    text-align: left;
+    font-size: 2.0rem;
+    background: rgb(237, 241, 227);
+  }
+
+  h2 {
+    font-size: 3.25rem;
+  }
+  
+  h3 {
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    font-size: 2.0rem;
+  }
+
+  #tribute-info{
+    max-width: 100%;
+    background: rgb(237, 241, 227);
+  }
+  a {
+    color: #477ca7;
+  }
+  
+  a:visited {
+    color: #74638f;
+  }
+
+  hr{
+    margin-block-start: 0.0em;
+    margin-block-end: 0.5em;
+    
+  }
+ 
+    img {
+      display: block;
+      max-width: 100%;
+      max-height: auto;
+      margin: 0 auto;
+    }
+    
+    #img-div {
+      background: white;
+      margin: 0;
+
+      height: auto;
+
+    }
+    
+    #img-caption {
+      margin: 15px 0 5px 0;
+      font-size: 1.8rem;
+    }
+    
     
   body {
     /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
@@ -81,12 +127,17 @@ html {
     font-size: 1.6rem;
     line-height: 1.5;
     text-align: center;
-    margin: 0;
+    overflow: visible;
   }
-
-
     
   .container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: max-content ;
+  }
+
+  .container:hover {
     font-size: 16px;
     width: 100%;
     height: auto;
@@ -95,6 +146,8 @@ html {
     display: grid;
     grid-template-columns:   40% 60%;
   }
+
+
 
       footer{
         position: fixed;
@@ -105,10 +158,7 @@ html {
         bottom:0;
       }
 
-  h1 {
-    font-size: 4rem;
-    margin-bottom: 0;
-  }
+
   
   @media (max-width: 460px) {
     h1 {
@@ -117,28 +167,10 @@ html {
     }
   }
   
-  h2 {
-    font-size: 3.25rem;
-  }
   
-  h3 {
-    margin-block-end: 0px;
-    margin-block-start: 0px;
-  }
-
-  #tribute-info{
-    max-width: 100%;
-  }
-  a {
-    color: #477ca7;
-  }
-  
-  a:visited {
-    color: #74638f;
-  }
   
   #main {
-    background: rgb(237, 241, 227);
+    
     min-width: 0;
   }
   
@@ -148,58 +180,14 @@ html {
     }
   }
   
-  img {
-    max-width: 100%;
-    display: block;
-    height: auto;
-    margin: 0 auto;
-    
-  }
-  
-  #img-div {
-    background: white;
-    padding: 10px;
-    margin: 0;
-  }
-  
-  #img-caption {
-    margin: 15px 0 5px 0;
-  }
-  
+ 
   @media (max-width: 460px) {
     #img-caption {
       font-size: 1.4rem;
     }
   }
   
-  #headline {
-    text-align: center;
-    max-width: 100%;
-  }
+ 
   
-  ul {
-    text-align: left;
-    line-height: 1.6;
-    max-width: 100%;
-    padding-right: 25px;
-  }
-  
-  li {
-    text-align: justify;
-    max-width: 100%;
-  }
-  
-  blockquote {
-    padding-left: 25px;
-    font-style: italic;
-    max-width: 545px;
-    margin: 0 auto 0px auto;
-    text-align: left;
-  }
-  
-  #title {
-    padding-top: 0px ;
-    text-align: center;
-    font-family: 'Lilita One', cursive;
-  }
+
 
